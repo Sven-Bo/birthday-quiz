@@ -32,15 +32,17 @@ def main():
     st.subheader("Beanworte alle Fragen richtig und erhalte dein exklusives Geburtstagsgeschenk! 🎁")
 
     # Set the questions and options
-    questions = ["Wie wird eine Benjamin Blümchen Torte in der DrP/CTG üblicherweise serviert?", "Stelle dir vor, es sind 3 Jira Tickets offen. Die Aufgaben der Tickets sind wie folgt:\n\n1.Hinzufügen einer super nützlichen Funktion im PCC\n\n2.VBA Bug fix im Refresher\n\n3.TM1 Rule Anpassung im FixedAssets Cube.\n\nWie würde dein Kollege Sven die Aufgaben priorisieren? Wähle die richtige Reihenfolge:", "Wie viele Zeilen code hat der „Sys_Utilities“ Prozess im Prolog", "Wie viele Zeilen code hätte der „Sys_Utilities“ Prozess im Prolog ohne die UOM Conversion?", "Mit welchem Tastenkürzel kann man in Microsoft Excel in den Bearbeitungsmodus einer ausgewählten Zelle wechseln?"]
+    questions = ["Wie wird eine Benjamin Blümchen Torte in der DrP/CTG üblicherweise serviert?", "Stelle dir vor, es sind 3 Jira Tickets offen. Die Aufgaben der Tickets sind wie folgt:\n\n1.Hinzufügen einer super nützlichen Funktion im PCC\n\n2.VBA Bug fix im Refresher\n\n3.TM1 Rule Anpassung im FixedAssets Cube.\n\nWie würde dein Kollege Sven die Aufgaben priorisieren? Wähle die richtige Reihenfolge:", "Wie viele Zeilen Code hat der „Sys_Utilities“ Prozess im Prolog [Stand 23.12.22]", "Wie viele Zeilen Code hätte der „Sys_Utilities“ Prozess im Prolog ohne die UOM Conversion? [Stand 23.12.22]", "Mit welchem Tastenkürzel kann man in Microsoft Excel in den Bearbeitungsmodus einer ausgewählten Zelle wechseln?", "Was ist die Konvention um pandas zu importieren?", "Welche Radio Station ist (noch) NICHT eingebunden auf der Cloud?"]
     options = [
     ["Die Oberseite der Torte zeigt nach oben", "Die Oberseite der Torte zeigt nach unten"],
     ["1. TM1, 2. VBA, 3. PCC", "1. PCC, 2. VBA, 3. TM1", "1. VBA, 2. PCC, 3. TM1"],
     ["rd. 100", "rd. 300", "rd. 500"],
     ["rd. -1%", "rd. -30%", "rd. -50%"],
     ["F2","Alt + F4", "Geht nicht. Man muss die Maus hierfür benutzen 🤓"],
+    ["import pandas","import pandas as np", "import pandas as pd"],
+    ["Radio Bollerwagen", "[sunshine-live] Techno", "[sunshine-live] Eurodance"],
     ]
-    answers = ["Die Oberseite der Torte zeigt nach unten", "1. PCC, 2. VBA, 3. TM1", "rd. 500", "rd. -50%", "F2"]
+    answers = ["Die Oberseite der Torte zeigt nach unten", "1. PCC, 2. VBA, 3. TM1", "rd. 500", "rd. -50%", "F2", "import pandas as pd", "[sunshine-live] Techno"]
 
     with st.form("quiz"):
         # Create the radio button widgets
